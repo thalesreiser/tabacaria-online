@@ -20,10 +20,9 @@ RUN --mount=type=cache,id=pnpm-store,target=/pnpm/store \
     pnpm install --frozen-lockfile --filter "@tabacaria/backend..."
 RUN pnpm --filter @tabacaria/shared-types build \
  && pnpm --filter @tabacaria/backend build
-# Production dependencies only, with workspace packages copied in, then the compiled app.
-RUN --mount=type=cache,id=pnpm-store,target=/pnpm/store \
-    pnpm --filter @tabacaria/backend deploy --prod --legacy /out \
- && cp -r apps/backend/.medusa/server/. /out/
+# The image gets only the compiled app (.medusa/server) plus production node_modules. pnpm deploy
+# also copies the package sources (TypeScript), which must not ship: Medusa would try to run them.
+RUN --mount=type=cache,id=pnpm-store,target=/pnpm/store \n    pnpm --filter @tabacaria/backend deploy --prod --legacy /deploy \n && mkdir -p /out \n && cp -r apps/backend/.medusa/server/. /out/ \n && cp -r /deploy/node_modules /out/node_modules
 
 FROM node:${NODE_VERSION}-bookworm-slim AS runtime
 ENV NODE_ENV=production \
