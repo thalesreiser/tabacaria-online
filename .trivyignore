@@ -1,0 +1,6 @@
+# Accepted advisories, explained in docs/security/audit-exceptions.md (review by 2027-01-31).
+# @graphql-tools/utils inside Medusa's build tooling. pnpm audit reports the GHSA ids, Trivy the CVE ids.
+GHSA-7mx3-vvmw-hjmv
+GHSA-c4qx-w738-7hr3
+CVE-2026-104852
+CVE-2026-114604

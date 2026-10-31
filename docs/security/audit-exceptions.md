@@ -11,6 +11,8 @@ cannot be reached with untrusted input. Each exception has an owner decision and
 
 ## `@graphql-tools/utils` prototype pollution (both advisories)
 
+- **IDs:** pnpm audit reports GHSA-7mx3-vvmw-hjmv and GHSA-c4qx-w738-7hr3; Trivy (image scan) reports
+  the same issues as CVE-2026-104852 and CVE-2026-114604. Both pairs are listed in `.trivyignore`.
 - **Path:** `@medusajs/cli` > `@medusajs/utils` > `@graphql-codegen/core` 4.0.2 >
   `@graphql-tools/utils` 10.11.0.
 - **Fix:** only in `@graphql-tools/utils` 12.x. `@graphql-codegen/core` 4.0.2 requires `^10.0.0`, so

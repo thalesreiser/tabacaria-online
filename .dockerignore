@@ -1,0 +1,16 @@
+**/node_modules
+**/.medusa
+**/.nuxt
+**/.output
+**/dist
+**/coverage
+**/.turbo
+**/.env
+**/.env.*
+!**/.env.example
+.git
+.github
+.claude
+.husky
+**/playwright-report
+**/test-results
