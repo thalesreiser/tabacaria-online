@@ -11,6 +11,7 @@
     "store:publishable-key": "medusa exec ./src/scripts/publishable-key.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
+    "test": "pnpm test:unit",
     "test:unit": "cross-env TEST_TYPE=unit NODE_OPTIONS=--experimental-vm-modules jest --silent --runInBand --forceExit",
     "test:integration:modules": "cross-env TEST_TYPE=integration:modules NODE_OPTIONS=--experimental-vm-modules jest --silent=false --runInBand --forceExit",
     "test:integration:http": "cross-env TEST_TYPE=integration:http NODE_OPTIONS=--experimental-vm-modules jest --silent=false --runInBand --forceExit"

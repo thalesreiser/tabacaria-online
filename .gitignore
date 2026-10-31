@@ -16,3 +16,6 @@ test-results/
 Thumbs.db
 .vscode/*
 !.vscode/extensions.json
+
+# Local working copies created by coding agents
+.claude/worktrees/
