@@ -1,0 +1,82 @@
+/*
+ * Design tokens (ADR 0002). This is the only file that may contain raw colors.
+ * Components use the semantic utilities (bg-primary, bg-cta, text-foreground...).
+ */
+
+:root {
+  /* Brand */
+  --primary: #0061d0;
+  --primary-foreground: #ffffff;
+  --cta: #fdd202;
+  --cta-foreground: #111111;
+  --danger: #d9000d;
+  --danger-foreground: #ffffff;
+  --surface-dark: #0a1f44;
+  --surface-dark-foreground: #ffffff;
+  --accent-orange: #f8922a;
+  --accent-cream: #fce5c2;
+
+  /* Page */
+  --background: #ffffff;
+  --foreground: #111111;
+
+  /* Neutrals needed by the base components (not in ADR 0002, see the PR) */
+  --muted-foreground: #525252;
+  --border: #e5e5e5;
+
+  /* shadcn-vue semantic names, mapped onto the brand tokens */
+  --card: var(--background);
+  --card-foreground: var(--foreground);
+  --popover: var(--background);
+  --popover-foreground: var(--foreground);
+  --secondary: var(--accent-cream);
+  --secondary-foreground: var(--foreground);
+  --muted: var(--accent-cream);
+  --accent: var(--accent-cream);
+  --accent-foreground: var(--foreground);
+  --destructive: var(--danger);
+  --destructive-foreground: var(--danger-foreground);
+  --input: var(--border);
+  --ring: var(--primary);
+
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-cta: var(--cta);
+  --color-cta-foreground: var(--cta-foreground);
+  --color-danger: var(--danger);
+  --color-danger-foreground: var(--danger-foreground);
+  --color-surface-dark: var(--surface-dark);
+  --color-surface-dark-foreground: var(--surface-dark-foreground);
+  --color-accent-orange: var(--accent-orange);
+  --color-accent-cream: var(--accent-cream);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Alfa Slab One", ui-serif, Georgia, serif;
+}
