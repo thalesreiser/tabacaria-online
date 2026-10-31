@@ -1,4 +1,4 @@
-# 0005 · PostHog for analytics, no advertising pixel
+# 0007 · PostHog for analytics, no advertising pixel
 
 Date: 2026-10-31 · Status: accepted · Decided by: Thales Reiser · Plan reference: DEC-04
 
