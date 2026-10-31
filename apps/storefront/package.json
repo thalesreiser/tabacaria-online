@@ -23,7 +23,7 @@
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "lucide-vue-next": "1.0.0",
-    "nuxt": "3.21.11",
+    "nuxt": "4.6.3",
     "nuxt-security": "2.7.0",
     "pinia": "4.1.0",
     "reka-ui": "2.11.0",
