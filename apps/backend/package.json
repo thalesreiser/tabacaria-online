@@ -8,6 +8,7 @@
     "start": "medusa start",
     "start:worker": "cross-env MEDUSA_WORKER_MODE=worker medusa start",
     "db:migrate": "medusa db:migrate",
+    "store:publishable-key": "medusa exec ./src/scripts/publishable-key.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test:unit": "cross-env TEST_TYPE=unit NODE_OPTIONS=--experimental-vm-modules jest --silent --runInBand --forceExit",
