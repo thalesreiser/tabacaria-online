@@ -50,8 +50,30 @@ function clear() {
       </p>
     </header>
 
-    <div class="grid gap-6 lg:grid-cols-[15rem_minmax(0,1fr)] lg:items-start">
-      <aside class="hidden lg:block" :aria-label="t('filters.title')">
+    <!--
+      Two rows on wide screens: the toolbar sits alone in the right column of row 1, so the filter
+      column and the cards both start on row 2 and line up at the top.
+    -->
+    <div class="grid gap-x-6 gap-y-5 lg:grid-cols-[15rem_minmax(0,1fr)] lg:items-start">
+      <div class="flex items-center justify-between gap-3 lg:col-start-2 lg:row-start-1">
+        <FilterDialog class="lg:hidden" :total="total">
+          <ListingFilters
+            id-prefix="dialog"
+            :categories="categories"
+            :active-category="activeCategory"
+            :filters="filters"
+            @change="update"
+            @clear="clear"
+          />
+        </FilterDialog>
+        <SortSelect
+          class="ml-auto"
+          :model-value="filters.sort"
+          @update:model-value="update({ sort: $event })"
+        />
+      </div>
+
+      <aside class="hidden lg:col-start-1 lg:row-start-2 lg:block" :aria-label="t('filters.title')">
         <ListingFilters
           id-prefix="side"
           :categories="categories"
@@ -62,25 +84,7 @@ function clear() {
         />
       </aside>
 
-      <div class="grid min-w-0 gap-5">
-        <div class="flex items-center justify-between gap-3">
-          <FilterDialog class="lg:hidden" :total="total">
-            <ListingFilters
-              id-prefix="dialog"
-              :categories="categories"
-              :active-category="activeCategory"
-              :filters="filters"
-              @change="update"
-              @clear="clear"
-            />
-          </FilterDialog>
-          <SortSelect
-            class="ml-auto"
-            :model-value="filters.sort"
-            @update:model-value="update({ sort: $event })"
-          />
-        </div>
-
+      <div class="grid min-w-0 gap-5 lg:col-start-2 lg:row-start-2">
         <ErrorState v-if="error" @retry="listing.retry()" />
 
         <div

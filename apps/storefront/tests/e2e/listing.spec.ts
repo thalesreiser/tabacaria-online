@@ -77,6 +77,20 @@ test.describe("category page", () => {
     expect(rows.length).toBeGreaterThan(1)
     for (const bottoms of rows) expect(new Set(bottoms).size).toBe(1)
   })
+
+  test("the filter column starts at the same height as the first row of cards", async ({
+    page,
+  }) => {
+    await page.goto("/categoria/todos")
+    await expect(cards(page)).toHaveCount(24)
+
+    const filters = await page.getByRole("complementary", { name: "Filtros" }).boundingBox()
+    const firstCard = await cards(page).first().boundingBox()
+
+    expect(filters).not.toBeNull()
+    expect(firstCard).not.toBeNull()
+    expect(Math.abs((filters?.y ?? 0) - (firstCard?.y ?? 0))).toBeLessThanOrEqual(1)
+  })
 })
 
 test.describe("pagination", () => {
