@@ -1,6 +1,6 @@
 # Backend (Medusa v2)
 
-Read the root `CLAUDE.md` first. This app is a placeholder until BE-01.1 scaffolds Medusa v2 here.
+Read the root `CLAUDE.md` first. Medusa 2.22 (scaffolded in BE-01.1 from the official `medusajs/dtc-starter`, without its demo data).
 
 ## Layout (from the plan)
 
