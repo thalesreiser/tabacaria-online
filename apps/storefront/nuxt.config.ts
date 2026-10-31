@@ -7,7 +7,13 @@ export default defineNuxtConfig({
   devtools: { enabled: isDev },
   modules: ["@pinia/nuxt", "nuxt-security", "@nuxtjs/i18n", "shadcn-nuxt"],
   css: ["~/assets/css/main.css"],
-  vite: { plugins: [tailwindcss()] },
+  vite: {
+    plugins: [
+      // @ts-expect-error The lockfile has two peer variants of vite 7.3.7 (jiti 1 and 2), so their
+      // Plugin types differ. Types only: build and runtime are the same vite. Remove when deduped.
+      tailwindcss(),
+    ],
+  },
   shadcn: { prefix: "", componentDir: "./components/ui" },
   app: {
     head: {

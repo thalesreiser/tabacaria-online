@@ -2,18 +2,52 @@
   "name": "@tabacaria/backend",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "typecheck": "tsc -p tsconfig.json --noEmit",
-    "lint": "eslint ."
+    "build": "medusa build",
+    "dev": "medusa develop",
+    "start": "medusa start",
+    "start:worker": "cross-env MEDUSA_WORKER_MODE=worker medusa start",
+    "db:migrate": "medusa db:migrate",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test:unit": "cross-env TEST_TYPE=unit NODE_OPTIONS=--experimental-vm-modules jest --silent --runInBand --forceExit",
+    "test:integration:modules": "cross-env TEST_TYPE=integration:modules NODE_OPTIONS=--experimental-vm-modules jest --silent=false --runInBand --forceExit",
+    "test:integration:http": "cross-env TEST_TYPE=integration:http NODE_OPTIONS=--experimental-vm-modules jest --silent=false --runInBand --forceExit"
   },
   "dependencies": {
-    "@tabacaria/shared-types": "workspace:*"
+    "@medusajs/admin-sdk": "2.22.2",
+    "@medusajs/admin-shared": "2.22.2",
+    "@medusajs/caching": "2.22.2",
+    "@medusajs/cli": "2.22.2",
+    "@medusajs/dashboard": "2.22.2",
+    "@medusajs/draft-order": "2.22.2",
+    "@medusajs/framework": "2.22.2",
+    "@medusajs/medusa": "2.22.2",
+    "@medusajs/ui": "4.2.9",
+    "@tabacaria/shared-types": "workspace:*",
+    "@tanstack/react-query": "5.64.2",
+    "react-i18next": "13.5.0",
+    "react-router-dom": "7.18.2",
+    "zod": "4.2.0"
   },
   "devDependencies": {
+    "@medusajs/eslint-plugin": "2.22.2",
+    "@medusajs/test-utils": "2.22.2",
+    "@swc/core": "^1.7.28",
+    "@swc/jest": "^0.2.36",
     "@tabacaria/eslint-config": "workspace:*",
+    "@types/jest": "^29.5.13",
+    "@types/node": "catalog:",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.2.25",
+    "cross-env": "10.1.0",
     "eslint": "catalog:",
-    "typescript": "catalog:"
+    "jest": "^29.7.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "catalog:",
+    "vite": "^7.3.7"
   }
 }

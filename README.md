@@ -37,7 +37,7 @@ extends it. `any`, `==` and `console.log` are rejected.
 ## Repository layout
 
 ```
-apps/backend            Medusa v2 (placeholder until BE-01.1)
+apps/backend            Medusa v2 (API, admin, worker)
 apps/storefront         Nuxt 3 storefront
 packages/shared-types   types shared by backend and storefront
 packages/eslint-config  shared ESLint flat config
