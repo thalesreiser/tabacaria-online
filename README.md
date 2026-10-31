@@ -38,7 +38,7 @@ extends it. `any`, `==` and `console.log` are rejected.
 
 ```
 apps/backend            Medusa v2 (API, admin, worker)
-apps/storefront         Nuxt 3 (placeholder until FE-01.1)
+apps/storefront         Nuxt 3 storefront
 packages/shared-types   types shared by backend and storefront
 packages/eslint-config  shared ESLint flat config
 docs/decisions/         architecture decision records (ADRs)

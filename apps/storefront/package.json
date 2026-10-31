@@ -4,16 +4,29 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "typecheck": "nuxt prepare && vue-tsc --noEmit",
     "lint": "eslint ."
   },
   "dependencies": {
-    "@tabacaria/shared-types": "workspace:*"
+    "@nuxtjs/i18n": "10.2.0",
+    "@pinia/nuxt": "1.0.3",
+    "@tabacaria/shared-types": "workspace:*",
+    "nuxt": "3.21.11",
+    "nuxt-security": "2.7.0",
+    "pinia": "4.1.0",
+    "vue": "3.5.44",
+    "vue-router": "4.6.4",
+    "zod": "4.6.7"
   },
   "devDependencies": {
     "@tabacaria/eslint-config": "workspace:*",
+    "@types/node": "24.19.2",
     "eslint": "catalog:",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "vue-tsc": "3.3.14"
   }
 }
