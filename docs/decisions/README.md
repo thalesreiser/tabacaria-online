@@ -15,6 +15,7 @@ infrastructure, new dependencies) is recorded here as `NNNN-short-title.md`, num
 | [0007](0007-analytics-posthog-no-ad-pixel.md)     | PostHog for analytics, no ad pixel |
 | [0008](0008-institutional-pages-markdown.md)      | Institutional pages in Markdown    |
 | [0009](0009-age-gate-modal.md)                    | Age gate as a modal over the page  |
+| [0010](0010-migrate-storefront-to-nuxt-4.md)      | Migrate the storefront to Nuxt 4   |
 
 Numbers are assigned in merge order. Before opening a PR with a new ADR, check the highest number on
 `develop`; if two open PRs take the same number, the one merged second renumbers.
