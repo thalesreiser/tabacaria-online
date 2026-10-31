@@ -124,5 +124,22 @@ const retried = ref(0)
       <ErrorState :heading-level="3" @retry="retried++" />
       <p class="text-muted-foreground text-sm">Tentativas nesta página: {{ retried }}.</p>
     </section>
+
+    <section id="paginas" class="grid gap-3">
+      <h2 class="text-xl">Páginas de exemplo</h2>
+      <ul class="text-primary grid gap-2 underline underline-offset-4">
+        <li><NuxtLink to="/categoria/todos">Todos os acessórios</NuxtLink></li>
+        <li><NuxtLink to="/categoria/isqueiros">Isqueiros</NuxtLink></li>
+        <li>
+          <NuxtLink to="/categoria/moedores?ordem=menor-preco&estoque=1"
+            >Moedores, menor preço, só em estoque</NuxtLink
+          >
+        </li>
+        <li><NuxtLink to="/busca?q=moedor">Busca por "moedor"</NuxtLink></li>
+        <li><NuxtLink to="/categoria/todos?simular=vazio">Lista vazia (simulada)</NuxtLink></li>
+        <li><NuxtLink to="/categoria/todos?simular=erro">Erro (simulado)</NuxtLink></li>
+        <li><NuxtLink to="/categoria/todos?simular=lento">Carregando (simulado)</NuxtLink></li>
+      </ul>
+    </section>
   </div>
 </template>

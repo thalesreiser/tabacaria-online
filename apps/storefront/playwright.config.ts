@@ -32,6 +32,9 @@ export default defineConfig({
       NUXT_PUBLIC_API_URL: "https://api.test",
       NUXT_PUBLIC_PUBLISHABLE_KEY: "pk_e2e",
       NUXT_PUBLIC_APP_ENV: "preview",
+      // The E2E build includes the sample catalog and reads from it.
+      NUXT_INCLUDE_MOCKS: "1",
+      NUXT_PUBLIC_DATA_SOURCE: "mock",
     },
   },
 })

@@ -10,5 +10,6 @@ infrastructure, new dependencies) is recorded here as `NNNN-short-title.md`, num
 | [0002](0002-visual-identity-and-design-tokens.md) | Visual identity and design tokens |
 | [0003](0003-split-ui-and-integration-tasks.md)    | Split UI and integration tasks    |
 | [0004](0004-base-component-style.md)              | Base component style              |
+| [0005](0005-product-listing-layout.md)            | Product listing layout            |
 
 A decision that replaces another gets a new number; the old ADR is marked "superseded by NNNN".

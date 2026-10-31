@@ -1,16 +1,21 @@
 <script setup lang="ts">
 import { Package } from "lucide-vue-next"
 
-const props = defineProps<{
-  name: string
-  to: string
-  /** Amount in cents. */
-  amount: number
-  originalAmount?: number
-  stock: number
-  lowStockThreshold?: number
-  image?: string
-}>()
+const props = withDefaults(
+  defineProps<{
+    name: string
+    to: string
+    /** Amount in cents. */
+    amount: number
+    originalAmount?: number
+    stock: number
+    lowStockThreshold?: number
+    image?: string
+    /** The name is a heading; pick the level that follows the page's own headings. */
+    headingLevel?: 2 | 3 | 4
+  }>(),
+  { headingLevel: 3 },
+)
 const emit = defineEmits<{ add: [] }>()
 const { t } = useI18n()
 
@@ -20,6 +25,7 @@ const discount = computed(() =>
     : 0,
 )
 const soldOut = computed(() => props.stock <= 0)
+const heading = computed(() => `h${props.headingLevel}`)
 </script>
 
 <template>
@@ -37,18 +43,24 @@ const soldOut = computed(() => props.stock <= 0)
       <img v-if="image" :src="image" alt="" loading="lazy" class="size-3/4 object-contain" />
       <Package v-else aria-hidden="true" class="size-1/3" />
     </div>
-    <div class="grid content-start gap-2 p-3">
+    <div class="flex flex-col items-start gap-2 p-3">
       <StockBadge :quantity="stock" :low-threshold="lowStockThreshold" />
-      <h3 class="text-base leading-tight">
+      <component :is="heading" class="text-base leading-tight">
         <NuxtLink
           :to="to"
           class="focus-visible:outline-ring after:absolute after:inset-0 focus-visible:outline-2 focus-visible:outline-offset-2"
         >
           {{ name }}
         </NuxtLink>
-      </h3>
+      </component>
       <Price :amount="amount" :original-amount="originalAmount" />
-      <Button variant="cta" class="relative z-10" :disabled="soldOut" @click="emit('add')">
+      <!-- mt-auto pins the button to the bottom, so a row of cards keeps the buttons aligned. -->
+      <Button
+        variant="cta"
+        class="relative z-10 mt-auto w-full"
+        :disabled="soldOut"
+        @click="emit('add')"
+      >
         {{ soldOut ? t("components.productCard.unavailable") : t("components.productCard.add") }}
       </Button>
     </div>

@@ -48,5 +48,47 @@
       "description": "Houve um problema do nosso lado. Tente de novo em instantes.",
       "retry": "Tentar de novo"
     }
+  },
+  "listing": {
+    "allProducts": "Todos os acessórios",
+    "searchTitle": "Busca: {query}",
+    "showing": "Mostrando {from} a {to} de {total} produtos",
+    "showingOne": "Mostrando 1 produto",
+    "loadingList": "Carregando produtos",
+    "empty": {
+      "title": "Nenhum produto encontrado",
+      "description": "Não achamos produtos com esses filtros. Tente mudar ou limpar a busca.",
+      "clear": "Limpar filtros"
+    }
+  },
+  "filters": {
+    "title": "Filtros",
+    "open": "Filtrar",
+    "close": "Fechar filtros",
+    "showResults": "Ver {total} produtos",
+    "categories": "Categoria",
+    "allCategories": "Todos os acessórios",
+    "price": "Preço",
+    "priceMin": "Preço mínimo, em reais",
+    "priceMax": "Preço máximo, em reais",
+    "priceFrom": "De",
+    "priceTo": "Até",
+    "apply": "Aplicar",
+    "availability": "Disponibilidade",
+    "inStock": "Só em estoque",
+    "clear": "Limpar filtros"
+  },
+  "sort": {
+    "label": "Ordenar por",
+    "relevance": "Mais relevantes",
+    "price-asc": "Menor preço",
+    "price-desc": "Maior preço",
+    "newest": "Novidades"
+  },
+  "pagination": {
+    "label": "Paginação",
+    "previous": "Página anterior",
+    "next": "Próxima página",
+    "page": "Página {page}"
   }
 }
