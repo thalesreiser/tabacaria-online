@@ -9,13 +9,13 @@ const { t } = useI18n()
         to="/"
         class="focus-visible:outline-cta inline-flex min-h-11 min-w-11 items-center rounded-md focus-visible:outline-2 focus-visible:outline-offset-2"
       >
-        <!-- 64 px on phones and 96 px from md up; logo.png is 256 px, sharp up to 128 px at 2x. -->
+        <!-- 64 px on phones and 112 px from md up; logo.png is 256 px, sharp up to 128 px at 2x. -->
         <img
           src="/logo.png"
           :alt="t('site.name')"
-          width="96"
-          height="96"
-          class="size-16 md:size-24"
+          width="112"
+          height="112"
+          class="size-16 md:size-28"
         />
       </NuxtLink>
     </div>
