@@ -24,6 +24,13 @@
   --muted-foreground: #525252;
   --border: #e5e5e5;
 
+  /* State colors for stock and similar status labels (ADR 0004) */
+  --success: #0b6b36;
+  --success-soft: #dff5e7;
+  --warning: #6b4100;
+  --warning-soft: #ffe9b8;
+  --inactive-soft: #ececec;
+
   /* shadcn-vue semantic names, mapped onto the brand tokens */
   --card: var(--background);
   --card-foreground: var(--foreground);
@@ -71,6 +78,15 @@
   --color-surface-dark-foreground: var(--surface-dark-foreground);
   --color-accent-orange: var(--accent-orange);
   --color-accent-cream: var(--accent-cream);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-inactive-soft: var(--inactive-soft);
+
+  /* Style A (ADR 0004): hard offset shadows, drawn like the logo outline */
+  --shadow-hard: 4px 4px 0 var(--foreground);
+  --shadow-hard-sm: 3px 3px 0 var(--foreground);
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

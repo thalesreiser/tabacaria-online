@@ -4,6 +4,7 @@ export const publicRuntimeConfigSchema = z.object({
   apiUrl: z.url(),
   publishableKey: z.string().min(1),
   sentryDsn: z.union([z.url(), z.literal("")]),
+  appEnv: z.enum(["development", "preview", "production"]),
   store: z.object({
     legalName: z.string(),
     cnpj: z.string(),
