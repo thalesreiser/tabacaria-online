@@ -25,6 +25,16 @@ onlyBuiltDependencies:
   - "@swc/core"
   - esbuild
 
-# Required by the Medusa CLI (same override as Medusa's official starter).
+# tsconfig-paths: required by the Medusa CLI (same override as Medusa's official starter).
+# lodash: GHSA-r5fr-rjxr-66jc, reaches us through @medusajs/cli > @graphql-codegen; the fix
+# stays inside lodash 4.x.
 overrides:
   tsconfig-paths: ^4.2.0
+  "lodash@<4.18.0": ^4.18.1
+
+# Advisories accepted after review (see docs/security/audit-exceptions.md). Review again when
+# Medusa updates @graphql-codegen, at the latest on 2027-01-31.
+auditConfig:
+  ignoreGhsas:
+    - GHSA-7mx3-vvmw-hjmv
+    - GHSA-c4qx-w738-7hr3
