@@ -31,6 +31,7 @@ export default defineConfig({
       NODE_ENV: "production",
       NUXT_PUBLIC_API_URL: "https://api.test",
       NUXT_PUBLIC_PUBLISHABLE_KEY: "pk_e2e",
+      NUXT_PUBLIC_APP_ENV: "preview",
     },
   },
 })

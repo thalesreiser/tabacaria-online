@@ -23,6 +23,9 @@ export default defineNuxtConfig({
       apiUrl: isDev ? "http://localhost:9000" : "",
       publishableKey: isDev ? "pk_dev_placeholder" : "",
       sentryDsn: "",
+      // "development" and "preview" expose the internal /_componentes gallery. Production hides it.
+      // Overridden by NUXT_PUBLIC_APP_ENV.
+      appEnv: isDev ? "development" : "production",
       // Legal data shown in the footer. Supplied by the legal team, never written in the code
       // (FE-11.2); empty values are not rendered. Overridden by NUXT_PUBLIC_STORE_*.
       store: {

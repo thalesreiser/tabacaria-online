@@ -21,5 +21,32 @@
       "description": "Tivemos um problema do nosso lado. Tente de novo em instantes."
     },
     "backHome": "Voltar para o início"
+  },
+  "components": {
+    "loading": "Carregando",
+    "price": {
+      "from": "de",
+      "to": "por"
+    },
+    "stock": {
+      "in": "Em estoque",
+      "low": "Última unidade | Últimas {count} unidades",
+      "out": "Esgotado"
+    },
+    "stepper": {
+      "group": "Quantidade",
+      "decrease": "Diminuir quantidade",
+      "increase": "Aumentar quantidade"
+    },
+    "productCard": {
+      "add": "Adicionar",
+      "unavailable": "Indisponível",
+      "discount": "{percent}% de desconto"
+    },
+    "error": {
+      "title": "Não deu para carregar",
+      "description": "Houve um problema do nosso lado. Tente de novo em instantes.",
+      "retry": "Tentar de novo"
+    }
   }
 }

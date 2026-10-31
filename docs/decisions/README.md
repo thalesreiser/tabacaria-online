@@ -8,5 +8,6 @@ infrastructure, new dependencies) is recorded here as `NNNN-short-title.md`, num
 | ------------------------------------------------- | --------------------------------- |
 | [0001](0001-node-24-runtime.md)                   | Node.js 24 LTS as the runtime     |
 | [0002](0002-visual-identity-and-design-tokens.md) | Visual identity and design tokens |
+| [0004](0004-base-component-style.md)              | Base component style              |
 
 A decision that replaces another gets a new number; the old ADR is marked "superseded by NNNN".
