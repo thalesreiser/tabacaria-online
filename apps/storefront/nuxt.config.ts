@@ -7,7 +7,13 @@ export default defineNuxtConfig({
   devtools: { enabled: isDev },
   modules: ["@pinia/nuxt", "nuxt-security", "@nuxtjs/i18n", "shadcn-nuxt"],
   css: ["~/assets/css/main.css"],
-  vite: { plugins: [tailwindcss()] },
+  vite: {
+    plugins: [
+      // @ts-expect-error The lockfile has two peer variants of vite 7.3.7 (jiti 1 and 2), so their
+      // Plugin types differ. Types only: build and runtime are the same vite. Remove when deduped.
+      tailwindcss(),
+    ],
+  },
   shadcn: { prefix: "", componentDir: "./components/ui" },
   app: {
     head: {
@@ -23,6 +29,9 @@ export default defineNuxtConfig({
       apiUrl: isDev ? "http://localhost:9000" : "",
       publishableKey: isDev ? "pk_dev_placeholder" : "",
       sentryDsn: "",
+      // "development" and "preview" expose the internal /_componentes gallery. Production hides it.
+      // Overridden by NUXT_PUBLIC_APP_ENV.
+      appEnv: isDev ? "development" : "production",
       // Legal data shown in the footer. Supplied by the legal team, never written in the code
       // (FE-11.2); empty values are not rendered. Overridden by NUXT_PUBLIC_STORE_*.
       store: {

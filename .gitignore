@@ -5,6 +5,8 @@ dist/
 .nuxt/
 .medusa/
 coverage/
+playwright-report/
+test-results/
 .turbo/
 *.log
 .env
