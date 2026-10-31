@@ -31,6 +31,10 @@ RUN --mount=type=cache,id=pnpm-store,target=/pnpm/store \
 FROM node:${NODE_VERSION}-bookworm-slim AS runtime
 ENV NODE_ENV=production \
     PORT=9000
+# npm, npx and corepack ship with the base image but are never used at runtime; removing them
+# drops their bundled dependencies (and their vulnerabilities) from the image.
+RUN rm -rf /usr/local/lib/node_modules/npm /usr/local/lib/node_modules/corepack \
+           /usr/local/bin/npm /usr/local/bin/npx /usr/local/bin/corepack
 WORKDIR /app
 COPY --from=build --chown=node:node /out ./
 USER node
