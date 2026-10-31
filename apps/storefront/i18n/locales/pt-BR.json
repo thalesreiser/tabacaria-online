@@ -1,1 +1,25 @@
-{}
+{
+  "site": {
+    "name": "Stray Dog Tabacaria",
+    "homeLink": "Stray Dog Tabacaria, página inicial",
+    "skipToContent": "Ir para o conteúdo"
+  },
+  "footer": {
+    "label": "Rodapé",
+    "cnpj": "CNPJ",
+    "address": "Endereço",
+    "support": "Atendimento",
+    "copyright": "© {year} Stray Dog Tabacaria"
+  },
+  "error": {
+    "notFound": {
+      "title": "Página não encontrada",
+      "description": "Não encontramos a página que você procurou."
+    },
+    "server": {
+      "title": "Algo deu errado",
+      "description": "Tivemos um problema do nosso lado. Tente de novo em instantes."
+    },
+    "backHome": "Voltar para o início"
+  }
+}
