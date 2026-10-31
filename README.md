@@ -55,6 +55,14 @@ packages reference them with `"catalog:"`.
 
 Commits follow Conventional Commits and reference the task ID (e.g. `feat(checkout): add pix polling (FE-06.2)`).
 
+## Changes and releases
+
+- PRs that change behaviour add a changeset: `pnpm changeset` (see `.changeset/README.md`).
+- Releases apply them with `pnpm version-packages`, which bumps versions and writes the changelogs.
+- Dependabot opens weekly update PRs against `develop`; security fixes are opened as soon as an
+  advisory is published.
+- Bugs are reported with the issue form; planned work lives on the project board.
+
 ## Documentation
 
 The development plan (epics, tasks, DoR/DoD, testing, CI/CD, roadmap and decision log) is the source of truth for the project and is kept outside the repository.

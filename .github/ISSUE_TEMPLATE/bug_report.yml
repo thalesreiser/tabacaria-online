@@ -1,0 +1,38 @@
+name: Bug report
+description: Something in the store or the API does not work as expected.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Never paste customer data, CPF, tokens or secrets here. This repository is public.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Backend, Storefront, Infrastructure]
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options: [Local, Staging, Production]
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Open ...\n2. Click ...\n3. See ..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs, screenshots or Sentry link
