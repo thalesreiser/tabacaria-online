@@ -48,6 +48,7 @@ catalogs:
 
 overrides:
   tsconfig-paths: ^4.2.0
+  lodash@<4.18.0: ^4.18.1
 
 importers:
 
@@ -97,7 +98,7 @@ importers:
         version: 2.22.2
       '@medusajs/caching':
         specifier: 2.22.2
-        version: 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))(awilix@8.0.1)
+        version: 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))(awilix@8.0.1)
       '@medusajs/cli':
         specifier: 2.22.2
         version: 2.22.2(@types/node@24.19.2)
@@ -106,13 +107,13 @@ importers:
         version: 2.22.2(@sinclair/typebox@0.34.52)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(ajv@8.13.0)(typescript@5.9.3)
       '@medusajs/draft-order':
         specifier: 2.22.2
-        version: 2.22.2(@medusajs/admin-sdk@2.22.2)(@medusajs/cli@2.22.2(@types/node@24.19.2))(@medusajs/dashboard@2.22.2(@sinclair/typebox@0.34.52)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(ajv@8.13.0)(typescript@5.9.3))(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))(@medusajs/icons@2.22.2(react@18.3.1))(@medusajs/test-utils@2.22.2)(@medusajs/ui@4.2.9(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3))(@sinclair/typebox@0.34.52)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(ajv@8.13.0)(react-dom@18.3.1(react@18.3.1))(react-router-dom@7.18.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+        version: 2.22.2(@medusajs/admin-sdk@2.22.2)(@medusajs/cli@2.22.2(@types/node@24.19.2))(@medusajs/dashboard@2.22.2(@sinclair/typebox@0.34.52)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(ajv@8.13.0)(typescript@5.9.3))(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))(@medusajs/icons@2.22.2(react@18.3.1))(@medusajs/test-utils@2.22.2)(@medusajs/ui@4.2.9(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3))(@sinclair/typebox@0.34.52)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(ajv@8.13.0)(react-dom@18.3.1(react@18.3.1))(react-router-dom@7.18.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       '@medusajs/framework':
         specifier: 2.22.2
-        version: 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+        version: 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       '@medusajs/medusa':
         specifier: 2.22.2
-        version: 2.22.2(d3b09e43a20b0ea81ddef2a002521c42)
+        version: 2.22.2(479c133fe025341bd2aac4fd64543c3c)
       '@medusajs/ui':
         specifier: 4.2.9
         version: 4.2.9(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)
@@ -129,15 +130,15 @@ importers:
         specifier: 7.18.2
         version: 7.18.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       zod:
-        specifier: 4.2.0
-        version: 4.2.0
+        specifier: 4.6.7
+        version: 4.6.7
     devDependencies:
       '@medusajs/eslint-plugin':
         specifier: 2.22.2
         version: 2.22.2(eslint@10.14.0(jiti@1.21.7))(typescript@5.9.3)
       '@medusajs/test-utils':
         specifier: 2.22.2
-        version: 2.22.2(@medusajs/core-flows@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)))(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))(@medusajs/medusa@2.22.2)
+        version: 2.22.2(@medusajs/core-flows@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)))(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))(@medusajs/medusa@2.22.2)
       '@swc/core':
         specifier: ^1.7.28
         version: 1.16.21(@swc/helpers@0.5.23)
@@ -7920,9 +7921,6 @@ packages:
   lodash.uniq@4.5.0:
     resolution: {integrity: sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==}
 
-  lodash@4.17.23:
-    resolution: {integrity: sha512-LgVTMpQtIopCi79SJeDiP0TfWi5CNEc/L/aRdTh3yIvmZXTnheWpKjSZhnvMl8iXbC1tFg9gdHHDMLoV7CnG+w==}
-
   lodash@4.18.1:
     resolution: {integrity: sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==}
 
@@ -10640,9 +10638,6 @@ packages:
     peerDependencies:
       zod: ^3.25.0 || ^4.0.0
 
-  zod@4.2.0:
-    resolution: {integrity: sha512-Bd5fw9wlIhtqCCxotZgdTOMwGm1a0u75wARVEY9HMs1X17trvA/lMi4+MGK5EUfYkXVTbX8UDiDKW4OgzHVUZw==}
-
   zod@4.6.6:
     resolution: {integrity: sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA==}
 
@@ -11794,7 +11789,7 @@ snapshots:
       common-tags: 1.8.2
       graphql: 16.14.2
       import-from: 4.0.0
-      lodash: 4.17.23
+      lodash: 4.18.1
       tslib: 2.6.3
 
   '@graphql-codegen/schema-ast@4.1.0(graphql@16.14.2)':
@@ -12483,48 +12478,48 @@ snapshots:
       - picomatch
       - supports-color
 
-  '@medusajs/analytics-local@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/analytics-local@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/analytics-posthog@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))(posthog-node@5.61.1(@opentelemetry/api@1.10.0))':
+  '@medusajs/analytics-posthog@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))(posthog-node@5.61.1(@opentelemetry/api@1.10.0))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       posthog-node: 5.61.1(@opentelemetry/api@1.10.0)
 
-  '@medusajs/analytics@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/analytics@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/api-key@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/api-key@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/auth-emailpass@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/auth-emailpass@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       scrypt-kdf: 2.0.1
 
-  '@medusajs/auth-github@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/auth-github@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/auth-google@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/auth-google@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       jsonwebtoken: 9.0.3
       jwks-rsa: 3.2.2
     transitivePeerDependencies:
       - supports-color
 
-  '@medusajs/auth-oidc@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/auth-oidc@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       openid-client: 5.7.1
 
-  '@medusajs/auth@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/auth@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       '@otplib/core': 13.5.0
       '@otplib/plugin-crypto-node': 13.5.0
       '@otplib/totp': 13.5.0
@@ -12535,36 +12530,36 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@medusajs/cache-inmemory@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/cache-inmemory@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/cache-redis@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/cache-redis@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       ioredis: 5.11.1
     transitivePeerDependencies:
       - supports-color
 
-  '@medusajs/caching-redis@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/caching-redis@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       ioredis: 5.11.1
       xxhash-wasm: 1.1.0
     transitivePeerDependencies:
       - supports-color
 
-  '@medusajs/caching@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))(awilix@8.0.1)':
+  '@medusajs/caching@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))(awilix@8.0.1)':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       awilix: 8.0.1
       fast-json-stable-stringify: 2.1.0
       node-cache: 5.1.2
       xxhash-wasm: 1.1.0
 
-  '@medusajs/cart@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/cart@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
   '@medusajs/cli@2.22.2(@types/node@24.19.2)':
     dependencies:
@@ -12603,20 +12598,20 @@ snapshots:
       - supports-color
       - tedious
 
-  '@medusajs/core-flows@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/core-flows@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       csv-parse: 7.0.3
       deeks: 3.2.1
       json-2-csv: 5.6.0
 
-  '@medusajs/currency@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/currency@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/customer@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/customer@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
   '@medusajs/dashboard@2.22.2(@sinclair/typebox@0.34.52)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(ajv@8.13.0)(typescript@5.9.3)':
     dependencies:
@@ -12718,12 +12713,12 @@ snapshots:
       - supports-color
       - tedious
 
-  '@medusajs/draft-order@2.22.2(@medusajs/admin-sdk@2.22.2)(@medusajs/cli@2.22.2(@types/node@24.19.2))(@medusajs/dashboard@2.22.2(@sinclair/typebox@0.34.52)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(ajv@8.13.0)(typescript@5.9.3))(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))(@medusajs/icons@2.22.2(react@18.3.1))(@medusajs/test-utils@2.22.2)(@medusajs/ui@4.2.9(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3))(@sinclair/typebox@0.34.52)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(ajv@8.13.0)(react-dom@18.3.1(react@18.3.1))(react-router-dom@7.18.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
+  '@medusajs/draft-order@2.22.2(@medusajs/admin-sdk@2.22.2)(@medusajs/cli@2.22.2(@types/node@24.19.2))(@medusajs/dashboard@2.22.2(@sinclair/typebox@0.34.52)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(ajv@8.13.0)(typescript@5.9.3))(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))(@medusajs/icons@2.22.2(react@18.3.1))(@medusajs/test-utils@2.22.2)(@medusajs/ui@4.2.9(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3))(@sinclair/typebox@0.34.52)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(ajv@8.13.0)(react-dom@18.3.1(react@18.3.1))(react-router-dom@7.18.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@ariakit/react': 0.4.42(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@babel/runtime': 7.29.10
       '@hookform/resolvers': 6.0.0(@sinclair/typebox@0.34.52)(ajv@8.13.0)(react-hook-form@7.83.0(react@18.3.1))(zod@4.6.6)
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       '@medusajs/js-sdk': 2.22.2
       '@tanstack/react-query': 5.64.2(react@18.3.1)
       '@uiw/react-json-view': 2.0.0-alpha.44(@babel/runtime@7.29.10)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -12739,7 +12734,7 @@ snapshots:
       '@medusajs/cli': 2.22.2(@types/node@24.19.2)
       '@medusajs/dashboard': 2.22.2(@sinclair/typebox@0.34.52)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(ajv@8.13.0)(typescript@5.9.3)
       '@medusajs/icons': 2.22.2(react@18.3.1)
-      '@medusajs/test-utils': 2.22.2(@medusajs/core-flows@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)))(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))(@medusajs/medusa@2.22.2)
+      '@medusajs/test-utils': 2.22.2(@medusajs/core-flows@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)))(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))(@medusajs/medusa@2.22.2)
       '@medusajs/ui': 4.2.9(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
@@ -12781,35 +12776,35 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@medusajs/event-bus-local@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/event-bus-local@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/event-bus-redis@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/event-bus-redis@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       bullmq: 5.13.0
       ioredis: 5.11.1
     transitivePeerDependencies:
       - supports-color
 
-  '@medusajs/file-local@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/file-local@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/file-s3@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/file-s3@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
       '@aws-sdk/client-s3': 3.1161.0
       '@aws-sdk/lib-storage': 3.1161.0(@aws-sdk/client-s3@3.1161.0)
       '@aws-sdk/s3-request-presigner': 3.1161.0
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       ulid: 2.4.0
 
-  '@medusajs/file@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/file@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)':
+  '@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)':
     dependencies:
       '@aws-sdk/client-dynamodb': 3.1161.0
       '@jercle/yargonaut': 1.1.5
@@ -12837,7 +12832,7 @@ snapshots:
       morgan: 1.12.1
       path-to-regexp: 8.4.2
       tsconfig-paths: 4.2.0
-      zod-validation-error: 5.0.0(zod@4.2.0)
+      zod-validation-error: 5.0.0(zod@4.6.7)
     optionalDependencies:
       ioredis: 5.11.1
     transitivePeerDependencies:
@@ -12856,112 +12851,112 @@ snapshots:
       - vite
       - zod
 
-  '@medusajs/fulfillment-manual@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/fulfillment-manual@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/fulfillment@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/fulfillment@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
   '@medusajs/icons@2.22.2(react@18.3.1)':
     dependencies:
       react: 18.3.1
 
-  '@medusajs/index@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/index@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/inventory@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/inventory@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
   '@medusajs/js-sdk@2.22.2':
     dependencies:
       fetch-event-stream: 0.1.6
       qs: 6.17.1
 
-  '@medusajs/link-modules@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/link-modules@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/locking-postgres@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/locking-postgres@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/locking-redis@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/locking-redis@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       ioredis: 5.11.1
     transitivePeerDependencies:
       - supports-color
 
-  '@medusajs/locking@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/locking@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/medusa@2.22.2(d3b09e43a20b0ea81ddef2a002521c42)':
+  '@medusajs/medusa@2.22.2(479c133fe025341bd2aac4fd64543c3c)':
     dependencies:
       '@inquirer/checkbox': 5.2.8(@types/node@24.19.2)
       '@inquirer/confirm': 6.3.5(@types/node@24.19.2)
       '@inquirer/input': 5.1.9(@types/node@24.19.2)
       '@medusajs/admin-bundler': 2.22.2(@sinclair/typebox@0.34.52)(@types/node@24.19.2)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(ajv@8.13.0)(jiti@1.21.7)(lightningcss@1.32.0)(picomatch@4.0.7)(terser@5.51.2)(typescript@5.9.3)(yaml@2.9.1)
-      '@medusajs/analytics': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/analytics-local': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/analytics-posthog': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))(posthog-node@5.61.1(@opentelemetry/api@1.10.0))
-      '@medusajs/api-key': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/auth': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/auth-emailpass': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/auth-github': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/auth-google': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/auth-oidc': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/cache-inmemory': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/cache-redis': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/caching': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))(awilix@8.0.1)
-      '@medusajs/caching-redis': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/cart': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/core-flows': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/currency': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/customer': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/draft-order': 2.22.2(@medusajs/admin-sdk@2.22.2)(@medusajs/cli@2.22.2(@types/node@24.19.2))(@medusajs/dashboard@2.22.2(@sinclair/typebox@0.34.52)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(ajv@8.13.0)(typescript@5.9.3))(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))(@medusajs/icons@2.22.2(react@18.3.1))(@medusajs/test-utils@2.22.2)(@medusajs/ui@4.2.9(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3))(@sinclair/typebox@0.34.52)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(ajv@8.13.0)(react-dom@18.3.1(react@18.3.1))(react-router-dom@7.18.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
-      '@medusajs/event-bus-local': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/event-bus-redis': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/file': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/file-local': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/file-s3': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
-      '@medusajs/fulfillment': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/fulfillment-manual': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/index': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/inventory': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/link-modules': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/locking': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/locking-postgres': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/locking-redis': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/notification': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/notification-local': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/notification-sendgrid': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/order': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/payment': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))(@types/node@24.19.2)
-      '@medusajs/payment-adyen': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/payment-stripe': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/pricing': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/product': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/promotion': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/rbac': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/region': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/sales-channel': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/search': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/search-postgres': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/settings': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/stock-location': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/store': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/tax': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
+      '@medusajs/analytics': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/analytics-local': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/analytics-posthog': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))(posthog-node@5.61.1(@opentelemetry/api@1.10.0))
+      '@medusajs/api-key': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/auth': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/auth-emailpass': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/auth-github': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/auth-google': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/auth-oidc': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/cache-inmemory': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/cache-redis': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/caching': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))(awilix@8.0.1)
+      '@medusajs/caching-redis': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/cart': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/core-flows': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/currency': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/customer': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/draft-order': 2.22.2(@medusajs/admin-sdk@2.22.2)(@medusajs/cli@2.22.2(@types/node@24.19.2))(@medusajs/dashboard@2.22.2(@sinclair/typebox@0.34.52)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(ajv@8.13.0)(typescript@5.9.3))(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))(@medusajs/icons@2.22.2(react@18.3.1))(@medusajs/test-utils@2.22.2)(@medusajs/ui@4.2.9(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.9.3))(@sinclair/typebox@0.34.52)(@types/react-dom@18.3.7(@types/react@18.3.31))(@types/react@18.3.31)(ajv@8.13.0)(react-dom@18.3.1(react@18.3.1))(react-router-dom@7.18.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+      '@medusajs/event-bus-local': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/event-bus-redis': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/file': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/file-local': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/file-s3': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
+      '@medusajs/fulfillment': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/fulfillment-manual': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/index': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/inventory': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/link-modules': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/locking': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/locking-postgres': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/locking-redis': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/notification': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/notification-local': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/notification-sendgrid': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/order': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/payment': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))(@types/node@24.19.2)
+      '@medusajs/payment-adyen': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/payment-stripe': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/pricing': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/product': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/promotion': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/rbac': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/region': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/sales-channel': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/search': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/search-postgres': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/settings': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/stock-location': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/store': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/tax': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
       '@medusajs/telemetry': 2.22.2
-      '@medusajs/translation': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/user': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/workflow-engine-inmemory': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/workflow-engine-redis': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
+      '@medusajs/translation': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/user': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/workflow-engine-inmemory': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/workflow-engine-redis': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
       boxen: 9.0.0
       chokidar: 4.0.3
       compression: 1.8.2
@@ -13049,21 +13044,21 @@ snapshots:
       - supports-color
       - tedious
 
-  '@medusajs/notification-local@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/notification-local@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/notification-sendgrid@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/notification-sendgrid@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       '@sendgrid/mail': 8.1.6
     transitivePeerDependencies:
       - debug
       - supports-color
 
-  '@medusajs/notification@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/notification@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
   '@medusajs/orchestration@2.22.2(@types/node@24.19.2)(express@4.22.3)':
     dependencies:
@@ -13084,40 +13079,40 @@ snapshots:
       - supports-color
       - tedious
 
-  '@medusajs/order@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/order@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/payment-adyen@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/payment-adyen@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
       '@adyen/api-library': 32.2.0
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
     transitivePeerDependencies:
       - supports-color
 
-  '@medusajs/payment-stripe@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/payment-stripe@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       stripe: 15.12.0
 
-  '@medusajs/payment@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))(@types/node@24.19.2)':
+  '@medusajs/payment@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))(@types/node@24.19.2)':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       stripe: 23.0.1(@types/node@24.19.2)
     transitivePeerDependencies:
       - '@types/node'
 
-  '@medusajs/pricing@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/pricing@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/product@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/product@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/promotion@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/promotion@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
   '@medusajs/query@2.22.2(@types/node@24.19.2)(express@4.22.3)':
     dependencies:
@@ -13137,41 +13132,41 @@ snapshots:
       - supports-color
       - tedious
 
-  '@medusajs/rbac@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/rbac@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/region@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/region@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/sales-channel@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/sales-channel@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/search-postgres@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/search-postgres@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/search@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/search@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/settings@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/settings@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/stock-location@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/stock-location@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/store@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/store@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
-  '@medusajs/tax@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/tax@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
   '@medusajs/telemetry@2.22.2':
     dependencies:
@@ -13187,23 +13182,23 @@ snapshots:
       - debug
       - supports-color
 
-  '@medusajs/test-utils@2.22.2(@medusajs/core-flows@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)))(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))(@medusajs/medusa@2.22.2)':
+  '@medusajs/test-utils@2.22.2(@medusajs/core-flows@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)))(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))(@medusajs/medusa@2.22.2)':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       '@types/express': 4.17.25
       axios: 1.21.0
       express: 4.22.3
       ulid: 2.4.0
     optionalDependencies:
-      '@medusajs/core-flows': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))
-      '@medusajs/medusa': 2.22.2(d3b09e43a20b0ea81ddef2a002521c42)
+      '@medusajs/core-flows': 2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))
+      '@medusajs/medusa': 2.22.2(479c133fe025341bd2aac4fd64543c3c)
     transitivePeerDependencies:
       - debug
       - supports-color
 
-  '@medusajs/translation@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/translation@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
 
   '@medusajs/types@2.22.2(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))':
     dependencies:
@@ -13241,9 +13236,9 @@ snapshots:
       - '@types/react-dom'
       - typescript
 
-  '@medusajs/user@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/user@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       jsonwebtoken: 9.0.3
 
   '@medusajs/utils@2.22.2(@types/node@24.19.2)(express@4.22.3)':
@@ -13276,15 +13271,15 @@ snapshots:
       - supports-color
       - tedious
 
-  '@medusajs/workflow-engine-inmemory@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/workflow-engine-inmemory@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       cron-parser: 4.9.0
       ulid: 2.4.0
 
-  '@medusajs/workflow-engine-redis@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0))':
+  '@medusajs/workflow-engine-redis@2.22.2(@medusajs/framework@2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7))':
     dependencies:
-      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.2.0)
+      '@medusajs/framework': 2.22.2(@medusajs/cli@2.22.2(@types/node@24.19.2))(@types/node@24.19.2)(ioredis@5.11.1)(vite@7.3.7(@types/node@24.19.2)(jiti@1.21.7)(lightningcss@1.32.0)(terser@5.51.2)(yaml@2.9.1))(zod@4.6.7)
       bullmq: 5.13.0
       ioredis: 5.11.1
       ulid: 2.4.0
@@ -19458,8 +19453,6 @@ snapshots:
 
   lodash.uniq@4.5.0: {}
 
-  lodash@4.17.23: {}
-
   lodash@4.18.1: {}
 
   log-symbols@7.0.1:
@@ -22563,11 +22556,9 @@ snapshots:
       compress-commons: 6.0.2
       readable-stream: 4.8.0
 
-  zod-validation-error@5.0.0(zod@4.2.0):
+  zod-validation-error@5.0.0(zod@4.6.7):
     dependencies:
-      zod: 4.2.0
-
-  zod@4.2.0: {}
+      zod: 4.6.7
 
   zod@4.6.6: {}
 
