@@ -1,7 +1,7 @@
 # Storefront (Nuxt 3)
 
-Read the root `CLAUDE.md` first. This app is a placeholder until FE-01.1 scaffolds Nuxt 3 here. The
-plan's "Arquitetura do frontend" and "Padrões do frontend" sections are the full reference.
+Read the root `CLAUDE.md` first. The plan's "Arquitetura do frontend" and "Padrões do frontend"
+sections are the full reference.
 
 ## Rules
 
