@@ -5,15 +5,20 @@ export { default as Button } from "./Button.vue"
 
 // Sizes keep a 44 px minimum touch target (storefront CLAUDE.md).
 export const buttonVariants = cva(
-  "inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-semibold whitespace-nowrap transition-colors outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+  "inline-flex shrink-0 items-center justify-center gap-2 rounded-lg text-sm font-semibold whitespace-nowrap transition-[transform,box-shadow,background-color] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
-        cta: "bg-cta text-cta-foreground hover:bg-cta/90",
-        destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
-        outline: "border border-primary bg-background text-primary hover:bg-accent",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        // Style A (ADR 0004): 2 px outline and a hard shadow that shrinks on hover.
+        default:
+          "border-2 border-foreground bg-primary text-primary-foreground shadow-hard-sm hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none disabled:shadow-none",
+        cta: "border-2 border-foreground bg-cta text-cta-foreground shadow-hard-sm hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none disabled:shadow-none",
+        destructive:
+          "border-2 border-foreground bg-destructive text-destructive-foreground shadow-hard-sm hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none disabled:shadow-none",
+        outline:
+          "border-2 border-foreground bg-background text-foreground shadow-hard-sm hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none disabled:shadow-none",
+        secondary:
+          "border-2 border-foreground bg-secondary text-secondary-foreground shadow-hard-sm hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none disabled:shadow-none",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
       },
