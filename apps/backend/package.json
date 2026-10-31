@@ -8,6 +8,7 @@
     "start": "medusa start",
     "start:worker": "cross-env MEDUSA_WORKER_MODE=worker medusa start",
     "db:migrate": "medusa db:migrate",
+    "store:publishable-key": "medusa exec ./src/scripts/publishable-key.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "test": "pnpm test:unit",
