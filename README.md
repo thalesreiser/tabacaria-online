@@ -22,7 +22,17 @@ Online store for a tobacco accessories shop in Brazil.
 pnpm install
 pnpm build       # builds every package through Turborepo
 pnpm typecheck   # type-checks every package
+pnpm lint        # ESLint in every package
+pnpm format      # Prettier (pnpm format:check only reports)
 ```
+
+`pnpm install` also installs the Git hooks (Husky):
+
+- **pre-commit:** ESLint and Prettier on staged files (lint-staged)
+- **commit-msg:** Conventional Commits check (commitlint), header up to 100 characters
+
+Shared lint rules live in `packages/eslint-config`; each package has an `eslint.config.js` that
+extends it. `any`, `==` and `console.log` are rejected.
 
 ## Repository layout
 
@@ -30,6 +40,7 @@ pnpm typecheck   # type-checks every package
 apps/backend            Medusa v2 (placeholder until BE-01.1)
 apps/storefront         Nuxt 3 (placeholder until FE-01.1)
 packages/shared-types   types shared by backend and storefront
+packages/eslint-config  shared ESLint flat config
 docs/decisions/         architecture decision records (ADRs)
 ```
 
