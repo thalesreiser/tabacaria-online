@@ -1,4 +1,4 @@
-# 0007 · Age gate as a modal over the page
+# 0009 · Age gate as a modal over the page
 
 Date: 2026-10-31 · Status: accepted · Decided by: Thales Reiser · Plan reference: DEC-02
 

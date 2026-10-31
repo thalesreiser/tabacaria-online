@@ -1,4 +1,4 @@
-# 0006 · Institutional pages in Markdown
+# 0008 · Institutional pages in Markdown
 
 Date: 2026-10-31 · Status: accepted · Decided by: Thales Reiser · Plan reference: DEC-11
 

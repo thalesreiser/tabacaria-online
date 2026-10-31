@@ -1,4 +1,4 @@
-# 0004 · Storefront hosting on Cloudflare
+# 0006 · Storefront hosting on Cloudflare
 
 Date: 2026-10-31 · Status: accepted · Decided by: Thales Reiser · Plan reference: DEC-05
 
