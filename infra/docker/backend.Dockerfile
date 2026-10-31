@@ -22,7 +22,11 @@ RUN pnpm --filter @tabacaria/shared-types build \
  && pnpm --filter @tabacaria/backend build
 # The image gets only the compiled app (.medusa/server) plus production node_modules. pnpm deploy
 # also copies the package sources (TypeScript), which must not ship: Medusa would try to run them.
-RUN --mount=type=cache,id=pnpm-store,target=/pnpm/store \n    pnpm --filter @tabacaria/backend deploy --prod --legacy /deploy \n && mkdir -p /out \n && cp -r apps/backend/.medusa/server/. /out/ \n && cp -r /deploy/node_modules /out/node_modules
+RUN --mount=type=cache,id=pnpm-store,target=/pnpm/store \
+    pnpm --filter @tabacaria/backend deploy --prod --legacy /deploy \
+ && mkdir -p /out \
+ && cp -r apps/backend/.medusa/server/. /out/ \
+ && cp -r /deploy/node_modules /out/node_modules
 
 FROM node:${NODE_VERSION}-bookworm-slim AS runtime
 ENV NODE_ENV=production \
