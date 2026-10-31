@@ -14,6 +14,17 @@ test.describe("smoke", () => {
     network.assertNoUnmockedCalls()
   })
 
+  test("the header logo is 112 px on wide screens and 64 px on phones", async ({ page }) => {
+    const logo = page.getByRole("banner").getByRole("img", { name: "Stray Dog Tabacaria" })
+
+    await page.setViewportSize({ width: 1280, height: 720 })
+    await page.goto("/")
+    expect((await logo.boundingBox())?.width).toBe(112)
+
+    await page.setViewportSize({ width: 360, height: 740 })
+    expect((await logo.boundingBox())?.width).toBe(64)
+  })
+
   test("unknown route shows the 404 page and goes back home", async ({ page }) => {
     await mockNetwork(page)
 
