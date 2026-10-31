@@ -1,6 +1,8 @@
 import tailwindcss from "@tailwindcss/vite"
 
 const isDev = process.env.NODE_ENV !== "production"
+// The sample catalog (mocks/) is part of a build only in development or with NUXT_INCLUDE_MOCKS=1.
+const includeMocks = isDev || process.env.NUXT_INCLUDE_MOCKS === "1"
 
 export default defineNuxtConfig({
   compatibilityDate: "2026-10-01",
@@ -8,6 +10,7 @@ export default defineNuxtConfig({
   modules: ["@pinia/nuxt", "nuxt-security", "@nuxtjs/i18n", "shadcn-nuxt"],
   css: ["~/assets/css/main.css"],
   vite: {
+    define: { __INCLUDE_MOCKS__: JSON.stringify(includeMocks) },
     plugins: [
       // @ts-expect-error The lockfile has two peer variants of vite 7.3.7 (jiti 1 and 2), so their
       // Plugin types differ. Types only: build and runtime are the same vite. Remove when deduped.
@@ -32,6 +35,9 @@ export default defineNuxtConfig({
       // "development" and "preview" expose the internal /_componentes gallery. Production hides it.
       // Overridden by NUXT_PUBLIC_APP_ENV.
       appEnv: isDev ? "development" : "production",
+      // Where catalog data comes from: "mock" (sample data) or "api" (Medusa, FE-04.1b).
+      // Overridden by NUXT_PUBLIC_DATA_SOURCE.
+      dataSource: isDev ? "mock" : "api",
       // Legal data shown in the footer. Supplied by the legal team, never written in the code
       // (FE-11.2); empty values are not rendered. Overridden by NUXT_PUBLIC_STORE_*.
       store: {

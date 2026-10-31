@@ -6,12 +6,24 @@ const validConfig = {
   publishableKey: "pk_teste",
   sentryDsn: "",
   appEnv: "production",
+  dataSource: "mock",
   store: { legalName: "", cnpj: "", address: "", support: "", minorsNotice: "" },
 }
 
 describe("publicRuntimeConfigSchema", () => {
   it("accepts a complete config with empty optional values", () => {
     expect(publicRuntimeConfigSchema.safeParse(validConfig).success).toBe(true)
+  })
+
+  it("accepts only the mock and api data sources and names the field", () => {
+    for (const dataSource of ["mock", "api"]) {
+      expect(publicRuntimeConfigSchema.safeParse({ ...validConfig, dataSource }).success).toBe(true)
+    }
+
+    const result = publicRuntimeConfigSchema.safeParse({ ...validConfig, dataSource: "csv" })
+
+    expect(result.success).toBe(false)
+    expect(result.error?.issues.map((issue) => issue.path.join("."))).toContain("dataSource")
   })
 
   it("accepts only the known app environments and names the field", () => {
